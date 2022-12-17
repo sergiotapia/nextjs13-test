@@ -7,7 +7,7 @@ interface Product {
   description: string;
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
   const url = "https://dummyjson.com/products"
   const res = await fetch(url)
   const resJson = await res.json()
@@ -21,7 +21,7 @@ export async function getServerSideProps(context) {
   }
 }
 
-export default function Hello({ products }) {
+export default function Hello({ products }: { products: Product[] }) {
   return (
     <>
       <Head>
