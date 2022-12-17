@@ -17,8 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by modifying&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+            Let's go!
           </p>
           <div>
             <a
